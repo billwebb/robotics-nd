@@ -70,6 +70,9 @@
 
   </link>
 
+  <gazebo reference="chassis">
+    <material>Gazebo/FlatBlack</material>
+  </gazebo>
 
   <link name='right_wheel'>
     <!-- <pose>0 0 0.1 0 0 0</pose> -->
@@ -99,6 +102,10 @@
     </visual>
 
   </link>
+
+  <gazebo reference="right_wheel">
+    <material>Gazebo/Yellow</material>
+  </gazebo>
 
   <joint type="continuous" name="right_wheel_hinge">
     <origin xyz="0 -0.15 0" rpy="0 0 0"/>
@@ -137,6 +144,10 @@
 
   </link>
 
+  <gazebo reference="left_wheel">
+    <material>Gazebo/Yellow</material>
+  </gazebo>
+
   <joint type="continuous" name="left_wheel_hinge">
     <origin xyz="0 0.15 0" rpy="0 0 0"/>
     <child link="left_wheel"/>
@@ -173,6 +184,10 @@
     </visual>
 
   </link>
+
+  <gazebo reference="camera">
+    <material>Gazebo/Grey</material>
+  </gazebo>
 
   <joint type="continuous" name="camera_joint">
     <origin xyz="0.2 0 0" rpy="0 0 0"/>

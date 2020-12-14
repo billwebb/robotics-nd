@@ -53,19 +53,19 @@ void process_image_callback(const sensor_msgs::Image img)
 
     // First, let's check left
     if ( found_white = find_white( img, 0, max_left ) ) {
-        new_lin_x = 0.1;
-        new_ang_z = 0.1;
+        new_lin_x = 0.5;
+        new_ang_z = 0.5;
     }
 
     // Next, let's check right
     if ( !found_white && (found_white = find_white( img, max_center, img.step )) ) {
-        new_lin_x = 0.1;
-        new_ang_z = -0.1;
+        new_lin_x = 0.5;
+        new_ang_z = -0.5;
     }
 
     // Finally, let's check center
     if ( !found_white && (found_white = find_white( img, max_left, max_center )) ) {
-        new_lin_x = 0.1;
+        new_lin_x = 0.5;
         new_ang_z = 0;
     }
 
