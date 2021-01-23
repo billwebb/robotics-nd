@@ -1,0 +1,8 @@
+prefix=/home/robond/project/robotics-nd/project-3-where-am-i/devel
+
+Name: my_robot
+Description: Description of my_robot
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/robond/project/robotics-nd/project-3-where-am-i/devel
+
+Name: ball_chaser
+Description: Description of ball_chaser
+Version: 0.0.0
+Cflags: -I/home/robond/project/robotics-nd/project-3-where-am-i/devel/include
+Libs: -L${prefix}/lib 
+Requires: 
