@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "pgm_map_creator"
-PROJECT_SPACE_DIR = "/home/robond/project/robotics-nd/project-3-where-am-i/devel"
+PROJECT_SPACE_DIR = "/home/billw/project/robotics-nd/project-3-where-am-i/devel"
 PROJECT_VERSION = "0.0.0"

@@ -1,8 +1,8 @@
-# Install script for directory: /home/robond/project/robotics-nd/project-3-where-am-i/src/pgm_map_creator
+# Install script for directory: /home/billw/project/robotics-nd/project-3-where-am-i/src/pgm_map_creator
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/robond/project/robotics-nd/project-3-where-am-i/install")
+  set(CMAKE_INSTALL_PREFIX "/home/billw/project/robotics-nd/project-3-where-am-i/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,24 +32,29 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/robond/project/robotics-nd/project-3-where-am-i/build/pgm_map_creator/catkin_generated/installspace/pgm_map_creator.pc")
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/billw/project/robotics-nd/project-3-where-am-i/build/pgm_map_creator/catkin_generated/installspace/pgm_map_creator.pc")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pgm_map_creator/cmake" TYPE FILE FILES
-    "/home/robond/project/robotics-nd/project-3-where-am-i/build/pgm_map_creator/catkin_generated/installspace/pgm_map_creatorConfig.cmake"
-    "/home/robond/project/robotics-nd/project-3-where-am-i/build/pgm_map_creator/catkin_generated/installspace/pgm_map_creatorConfig-version.cmake"
+    "/home/billw/project/robotics-nd/project-3-where-am-i/build/pgm_map_creator/catkin_generated/installspace/pgm_map_creatorConfig.cmake"
+    "/home/billw/project/robotics-nd/project-3-where-am-i/build/pgm_map_creator/catkin_generated/installspace/pgm_map_creatorConfig-version.cmake"
     )
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pgm_map_creator" TYPE FILE FILES "/home/robond/project/robotics-nd/project-3-where-am-i/src/pgm_map_creator/package.xml")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pgm_map_creator" TYPE FILE FILES "/home/billw/project/robotics-nd/project-3-where-am-i/src/pgm_map_creator/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/robond/project/robotics-nd/project-3-where-am-i/build/pgm_map_creator/msgs/cmake_install.cmake")
+  include("/home/billw/project/robotics-nd/project-3-where-am-i/build/pgm_map_creator/msgs/cmake_install.cmake")
 
 endif()
 

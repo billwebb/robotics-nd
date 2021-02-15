@@ -1,4 +1,4 @@
-prefix=/home/robond/project/robotics-nd/project-3-where-am-i/install
+prefix=/home/billw/project/robotics-nd/project-3-where-am-i/install
 
 Name: my_robot
 Description: Description of my_robot

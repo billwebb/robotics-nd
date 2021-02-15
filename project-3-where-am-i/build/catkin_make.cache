@@ -1,2 +1,2 @@
 ball_chaser:my_robot:pgm_map_creator
--DCATKIN_DEVEL_PREFIX=/home/robond/project/robotics-nd/project-3-where-am-i/devel -DCMAKE_INSTALL_PREFIX=/home/robond/project/robotics-nd/project-3-where-am-i/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/billw/project/robotics-nd/project-3-where-am-i/devel -DCMAKE_INSTALL_PREFIX=/home/billw/project/robotics-nd/project-3-where-am-i/install -G Unix Makefiles
