@@ -189,7 +189,7 @@
     <material>Gazebo/Grey</material>
   </gazebo>
 
-  <joint type="continuous" name="camera_joint">
+  <joint type="fixed" name="camera_joint">
     <origin xyz="0.2 0 0" rpy="0 0 0"/>
     <child link="camera"/>
     <parent link="chassis"/>
@@ -225,7 +225,7 @@
 
   </link>
 
-  <joint type="continuous" name="hokuyo_joint">
+  <joint type="fixed" name="hokuyo_joint">
     <origin xyz="0.15 0 .1" rpy="0 0 0"/>
     <child link="hokuyo"/>
     <parent link="chassis"/>
