@@ -12,8 +12,8 @@
     <param name="base_frame_id" value="robot_footprint"/>
     <param name="global_frame_id" value="map"/>
 
-    <param name="initial_pose_x" value="5.5"/>
-    <param name="initial_pose_y" value="-3"/>
+    <param name="initial_pose_x" value="-7.75"/>
+    <param name="initial_pose_y" value="-8"/>
   </node>
 
   <!-- Move Base -->
