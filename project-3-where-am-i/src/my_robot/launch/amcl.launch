@@ -11,9 +11,14 @@
     <param name="odom_model_type" value="diff-corrected"/>
     <param name="base_frame_id" value="robot_footprint"/>
     <param name="global_frame_id" value="map"/>
-
+    
     <param name="initial_pose_x" value="-7.75"/>
     <param name="initial_pose_y" value="-8"/>
+
+    <param name="laser_max_beams" value="100"/>
+    <param name="laser_likelihood_max_dist" value="2"/>
+    <param name="laser_max_range" value="30"/>
+
   </node>
 
   <!-- Move Base -->
