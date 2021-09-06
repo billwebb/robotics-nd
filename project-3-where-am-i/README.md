@@ -2,7 +2,7 @@
 
 **Project Submission by Bill Webb**
 
-**April 2021**
+**September 2021**
 
 ## Running the Project
 
@@ -37,7 +37,7 @@ roslaunch my_robot amcl.launch
 
 ## Results
 
-This project performs localization of the robot.  The following images show the robot in its initial state.  Then, after the `2D Nav Goal` is set in RVIZ, the images show the robot in mid-movement and then in the final location.
+This project performs localization of the robot.  The following images show the robot in its initial state.  Then, the following two images show the robot localized after moving it around the room using `2D Nav Goal` is in RVIZ.
 
 ![Robot in Initial State](robot-start.png)
 
