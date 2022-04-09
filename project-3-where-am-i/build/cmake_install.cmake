@@ -133,7 +133,6 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/billw/project/robotics-nd/project-3-where-am-i/build/gtest/cmake_install.cmake")
   include("/home/billw/project/robotics-nd/project-3-where-am-i/build/my_robot/cmake_install.cmake")
   include("/home/billw/project/robotics-nd/project-3-where-am-i/build/ball_chaser/cmake_install.cmake")
-  include("/home/billw/project/robotics-nd/project-3-where-am-i/build/pgm_map_creator/cmake_install.cmake")
 
 endif()
 
