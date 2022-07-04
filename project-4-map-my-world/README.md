@@ -1,8 +1,8 @@
-# Project 3: Where am I?
+# Project 4: Map My World
 
 **Project Submission by Bill Webb**
 
-**September 2021**
+**July 2022**
 
 ## Running the Project
 
@@ -26,21 +26,39 @@ catkin_make
 roslaunch my_robot world.launch
 ```
 
-4. In the RVIZ GUI, load the config file `src/my_robot/rviz/my_robot.rviz`
-
-5. In other terminal, source the environment and run map and AMCL.
+3. In another terminal, run teleop to control the robot.
 
 ``` bash
 source devel/setup.bash
-roslaunch my_robot amcl.launch
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+```
+
+5. In another terminal, run mapping.
+
+``` bash
+source devel/setup.bash
+roslaunch my_robot mapping.launch
+```
+
+6. Drive around the world using teleop so mapping can be performed.
+
+7. Localization can then also run.
+
+``` bash
+source devel/setup.bash
+roslaunch my_robot localization.launch
 ```
 
 ## Results
 
-This project performs localization of the robot.  The following images show the robot in its initial state.  Then, the following two images show the robot localized after moving it around the room using `2D Nav Goal` is in RVIZ.
+The mapping was done in the two main rooms of the house.  The results included 48 global loop closures and an accurate occupancy grid.  It was necessary to add landmarks (sofa, desk, etc.) for the global loop closures to occur more often.
 
-![Robot in Initial State](robot-start.png)
+The rtabmap.db file is included in the root of the project directory.
 
-![Robot Moving](robot-moving.png)
+![World Overview](World.png)
 
-![Robot in Final Location](robot-end.png)
+![Graph View with 48 Global Loop Closures](GraphView.png)
+
+![Occupancy Grid including Landmarks](OccupancyGrid.png)
+
+![3D Map](3DMap.png)
