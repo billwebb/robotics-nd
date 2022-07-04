@@ -55,10 +55,14 @@ The mapping was done in the two main rooms of the house.  The results included 4
 
 The rtabmap.db file can be downloaded from [this link](https://drive.google.com/file/d/1drIF_3gNQ0ZJ8WR44o6XhCkH5J2rPPhJ/view?usp=sharing).
 
+### World Overview
 ![World Overview](World.png)
 
+### Graph View with 48 Global Loop Closures
 ![Graph View with 48 Global Loop Closures](GraphView.png)
 
+### Occupancy Grid including Landmarks
 ![Occupancy Grid including Landmarks](OccupancyGrid.png)
 
+### 3D Map
 ![3D Map](3DMap.png)
