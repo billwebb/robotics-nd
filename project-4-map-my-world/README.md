@@ -53,7 +53,7 @@ roslaunch my_robot localization.launch
 
 The mapping was done in the two main rooms of the house.  The results included 48 global loop closures and an accurate occupancy grid.  It was necessary to add landmarks (sofa, desk, etc.) for the global loop closures to occur more often.
 
-The rtabmap.db file is included in the root of the project directory.
+The rtabmap.db file can be downloaded from [this link](https://drive.google.com/file/d/1drIF_3gNQ0ZJ8WR44o6XhCkH5J2rPPhJ/view?usp=sharing).
 
 ![World Overview](World.png)
 
