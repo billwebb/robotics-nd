@@ -8,41 +8,53 @@
 
 To set up your python environment to run the code in this repository, follow the instructions below.  This was done on an Ubuntu target.
 
-1. Source the ROS environment.
+1. Change to the Project 4 directory.
+
+``` bash
+cd robotics-nd/project-4-map-my-world
+```
+
+2. Source the ROS environment.
 
 ``` bash
 source devel/setup.bash
 ```
 
-2. Build the ROS project.
+3. Update the model path.
+
+``` bash
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:$(pwd)/models/
+```
+
+4. Build the ROS project.
 
 ``` bash
 catkin_make
 ```
 
-3. Run ROS to start the world, Gazebo, and RVIZ.
+5. Run ROS to start the world, Gazebo, and RVIZ.
 
 ``` bash
 roslaunch my_robot world.launch
 ```
 
-3. In another terminal, run teleop to control the robot.
+6. In another terminal, run teleop to control the robot.
 
 ``` bash
 source devel/setup.bash
 rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
 
-5. In another terminal, run mapping.
+7. In another terminal, run mapping.
 
 ``` bash
 source devel/setup.bash
 roslaunch my_robot mapping.launch
 ```
 
-6. Drive around the world using teleop so mapping can be performed.
+8. Drive around the world using teleop so mapping can be performed.
 
-7. Localization can then also run.
+9. Localization can then also run.
 
 ``` bash
 source devel/setup.bash
